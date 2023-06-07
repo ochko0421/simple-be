@@ -1,0 +1,11 @@
+###
+post http://localhost:9000/api/busstops/create
+Content-Type: application/json
+
+{
+    "busStopName":"Дулааны цахилгаан станц 3 (баруун)",
+    "busStopCoord":[47.89922005629932, 106.86774002244812]
+}
+
+###
+get http://localhost:9000/api/busstops
