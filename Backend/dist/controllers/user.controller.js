@@ -58,7 +58,7 @@ const Login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         if (email == user.email) {
             const decrypt = yield bcrypt.compare(password, user.password);
             if (decrypt) {
-                res.json({ message: "Logged in" });
+                res.json({ status: true, message: "Logged in", user });
             }
             else {
                 res.json({ message: "Wrong email or password" });

@@ -12,7 +12,7 @@ const user_router_1 = __importDefault(require("./routers/user.router"));
 const busstop_router_1 = __importDefault(require("./routers/busstop.router"));
 // const cors = require("cors");
 // const dotenv = require("dotenv")
-// const busRoutes = require("./routers/busstop.router")
+// const busRoutes = require("./routers/busstop.router") 
 dotenv_1.default.config();
 const url = process.env.MONGO_DB_URI || "";
 mongoose_1.default
